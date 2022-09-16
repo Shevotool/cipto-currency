@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Cryptocurrencies</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <img src="img/coin3.jpg" />
+        </div>
+        <div class="one-half column">
+          <form id="formulario">
+            <div class="row">
+              <label>Choose your currency</label>
+              <select class="u-full-width" id="moneda" name="moneda">
+                <option value="">Choose your currency</option>
+                <option value="USD">US Dollar</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="GBP">Libras</option>
+                <option value="EUR">Euros</option>
+                <option value="COL">Colones</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Choose your Cryptocurrency</label>
+                <select
+                  class="u-full-width"
+                  id="criptomonedas"
+                  name="criptomoneda"
+                >
+                  <option value="" disabled selected>
+                    Choose your Cryptocurrency
+                  </option>
+                </select>
+              </div>
+            </div>
+            <input
+              class="button-primary u-full-width"
+              type="submit"
+              value="Quote"
+            />
+
+            <div id="resultado" class="resultado"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
